@@ -1,0 +1,104 @@
+.signup-upper{
+    height: 116px;
+    background-color: #14AE5C;
+    color: white;
+}
+.form__container {
+    width: 40.625rem;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px#c4c4c4;
+}
+
+.form-input input{
+    height: 60px;
+    border: 1px solid #14AE5C;
+    border-radius: 0px;
+}
+.signup_form {
+    padding: 2rem;
+    margin: 5rem;
+    font: 'Open Sans';
+}
+
+.gap-20{
+    gap: 20px
+}
+
+.log {
+    color: var(--color-greentext);
+    text-decoration: none;
+}
+
+.log:hover{
+    color: var(--color-greentext); 
+}
+.sign-up {
+    width: 100%;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--color-green);
+    color: white;
+    font-weight: 600;
+}
+
+.sign-up:hover {
+    border: 1px solid var(--color-green);
+    background-color: transparent;
+    color: black;
+transition: var(--transition);
+}
+
+.passwordeye{
+position: relative;
+top: -43px;
+left: 395px;
+cursor: default;
+}
+
+.forgot {
+    text-decoration: none;
+    color: black;
+}
+
+.form-socials img{
+cursor: default;
+}
+
+@media screen and (max-width: 670px) {
+    .form__container {
+        box-shadow: none;
+        width: 30.625rem;
+    }
+
+    .signup_form {
+        padding: 0;
+        margin: 3rem;
+    }
+
+    .passwordeye{
+        position: relative;
+        top: -43px;
+        left: 365px;
+        }
+    
+        }
+        @media screen and (max-width: 500px) {
+            .form__container {
+          
+                width: 20rem;
+            }
+        
+            .signup_form {
+                padding: 0;
+                margin: 1rem;
+            }
+
+            .passwordeye{
+                position: relative;
+                top: -43px;
+                left: 260px;
+                }
+            
+                }

@@ -1,0 +1,104 @@
+.herosection{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../../assets/Herosection.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-bg);
+    padding: 71px 41px;
+}
+
+.innerheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.btn-1{
+    margin-top: 32px;
+    width: 222px;
+    height: 63px;
+    color: white;
+    border-radius: 12px;
+    background: var(--color-green);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.radios{
+    margin-top: 81px;
+        display: flex;
+        gap: 10px
+}
+.radio{
+   width: 20px;
+   height: 20px;
+   background-color: var(--color-light);
+   border-radius: 50%;
+
+}
+
+.activeRadio{
+    background: var(--color-green);
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+.right-section div{
+    width: 415px;
+}
+    }
+
+    @media screen and (max-width: 800px) {
+ .herosection{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+ }
+ .right-section{
+    width: 100%;
+ }
+ .right-section div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 300px;
+}
+.left-section{
+    margin-top: 50px;
+    width: 100%;
+}
+.innerheader{
+  justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+ .innerheader h1{
+font-size: 2rem;
+}
+
+}
+
+@media screen and (max-width: 425px) {
+   .right-section div{
+    width: 220px;
+}
+.radio{
+    width: 16px;
+    height: 16px;
+ 
+ }
+ 
+    }
+
+    @media screen and (max-width: 375px) {
+ .herosection{
+    padding: 30px 20px;
+ }
+ .innerheader h1{
+    font-size: 1.5rem;
+    }
+         }
+     

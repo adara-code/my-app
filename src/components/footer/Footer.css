@@ -1,0 +1,100 @@
+.footer{
+    background: var(--color-green);
+}
+
+.footer,.footer a, .footer a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+.footerupper, .footerlower{
+    padding: 42px 0;
+}
+
+.footerupper{
+ border-bottom: 1px solid #ffff;
+}
+
+.footerlower{
+font-size: 12px;
+   }
+   
+
+.footerlogo{
+    width: 146px;
+}
+
+.footer-first-section p{
+    width:380px
+}
+
+.footer-third-section p{
+    width: 420px
+}
+
+.gap-30{
+    gap: 30px;
+}
+
+.gap-20{
+    gap: 10px;
+}
+
+.footerform input{
+padding: 20px;
+font-size: 14px;
+}
+
+.footerinput{
+    width: 230px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.footerform .emailsubmit{
+    padding: 20px 27px;
+    background: #D5FADB;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+@media screen and (max-width: 1150px) {
+    .footer-third-section p{
+        width: 350px
+    }
+        }
+        @media screen and (max-width: 930px) {
+            .footer_innerwrapper {
+                flex-direction: column;
+                gap: 30px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .footerlogo, .footericons{
+               margin: auto;
+            }
+
+                }
+                @media screen and (max-width: 400px) {
+                    .footerinput{
+                        width: 150px;
+                    }
+
+                    .footerform .emailsubmit{
+                        padding: 20px 18px;
+                    
+                    }
+                    
+
+                    .footer-first-section p, .footer-third-section p{
+                        width:100%
+                    }
+                    
+                    .footer-third-section p{
+                        width: 100%;
+                    }
+        
+                        }

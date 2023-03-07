@@ -1,0 +1,22 @@
+.setup-input{
+    width: 400px;
+    height: 50px;
+    font-size: 14px;
+    color: #9D9C9D;
+    border: 1px solid #939497;
+
+}
+
+.setup-input-button{
+    width: 172px; 
+    height: 50px;
+    border-radius: 8px;
+    font-size: 15px;
+    background: none;
+    border: 1px solid #939497;
+}
+
+.set-up-active{
+    background: linear-gradient(213.53deg, #F2D741 6.44%, #118924 98.29%);
+    color: white;
+}
