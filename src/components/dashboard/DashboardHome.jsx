@@ -84,7 +84,6 @@ const DashboardHome = () => {
                                 <li className='dash_searchbar' style={{gap:'10px'}}>
                                     <form >
                                     <input type="text" className='profile_searchbar dash_searchbar' style={{paddingLeft: '45px',border: 'none'}} placeholder='Search'/>
-                                    <span className='dashboardnav-search' style={{fontSize: '18px', color: '#999090', marginLeft: '-280px'}}><BiSearch/></span>
                                     </form>
                             
                                 </li>

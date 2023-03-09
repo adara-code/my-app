@@ -43,11 +43,17 @@ height: 0;
     cursor: pointer;
     transition: var(--transition);
 }
-
-.dashboard-nav-item:hover, .dashboardactive {
+.dashboard-nav a{
+    color: black;
+}
+.dashboard-nav-item:hover, .dashboard-nav .dashboardactive {
     background: linear-gradient(213.53deg, #F2D741 6.44%, #118924 98.29%);
     color: white;
+    border-radius: 8px;
 }
+
+
+
 
 .gap-20{
     gap: 20px;
@@ -79,6 +85,52 @@ display: none;
     padding: 32px
 }
 
+.account-main{
+    background: var(--color-light);
+    width: 100%;
+    padding: 50px 30px 30px 30px
+}
+
+.account-left{
+    background: white; 
+    padding: 30px 10px; 
+    height: 210px;
+    border-radius: 8px
+}
+
+.customer-main{
+    padding: 30px;
+}
+
+.table-search{
+    width: 270px
+}
+
+.customer-table{
+    width: 100%;
+    overflow-x: scroll;
+}
+
+
+
+.cust-hidden {
+    display: none;
+}
+
+
+.dash-review-card p{
+    padding-right: 30px;
+}
+
+.dash-review-card button{
+    margin-left: 30px
+}
+
+.collection-nav{
+    display: none;
+}
+
+
 
 @media (min-width: 1020px) and (max-width: 1300px) {
     .dashboard-nav-inner{
@@ -109,14 +161,42 @@ display: none;
         justify-content: center;
     }
 
+    .account-main{
+        background: var(--color-light);
+        width: 100%;
+        padding: 50px 20px 20px 20px
+    }
+
+
+    .account-left, .accountnav-search{
+display: none;
+    }
+
+.account-search{
+    width: 350px;
 }
+
+
+
+
+}
+
+@media (min-width: 1020px) and (max-width: 1100px) {
+    .table-filter{
+        display: none;
+    }
+    }
 
 
 @media screen and (max-width: 1019px) {
 
 
-    .dashboard-home-first-section,.dash-home-inner-header,.dashboard-home-third-section{
+    .dashboard-home-first-section,.dash-home-inner-header,.dashboard-home-third-section, .account-left, .table-nav{
 display: none;
+    }
+
+    .collection-nav{
+        display: flex;
     }
 
     .dashnavcancel{
@@ -159,11 +239,61 @@ display: none;
         align-items: center;
         justify-content: center;
     }
+.account-side{
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
+    .dash-review-card{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .dash-review-card p{
+        padding-right: 0px;
+    }
+    
+    .dash-review-card button{
+        margin-left: 0px
+    }
+    
+    }
 
+@media screen and (max-width: 400px) {
+    .customer-main{
+        padding: 15px;
+    }
+    .dash_searchbar{
+        width: 250px;
+        margin: auto;
+    }
+
+    .accountnav-search{
+        display: none;
+    }
+
+    .cust-box{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .cust-hidden {
+        display: flex;
+        width: 100%;
+    }
+
+    .customer-account-main{
+        padding: 50px 20px 20px 20px
+    }
+
+    .dash-home-inner{
+        padding: 40px 8px;
+    }
 }

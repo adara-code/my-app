@@ -1,0 +1,95 @@
+.setup-input{
+    width: 400px;
+    height: 50px;
+    font-size: 14px;
+    color: #9D9C9D;
+    border: 1px solid #939497;
+
+}
+
+.setupsecond-input{
+    width: 270px;
+}
+
+.setup-input-button{
+    width: 172px; 
+    height: 50px;
+    border-radius: 8px;
+    font-size: 15px;
+    background: none;
+    border: 1px solid #939497;
+}
+
+.set-up-active{
+    background: linear-gradient(213.53deg, #F2D741 6.44%, #118924 98.29%);
+    color: white;
+    border: none;
+}
+
+.setup-textarea{
+    border: 1px solid #939497;
+    resize: none;
+    width: 580px;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 14px;
+    color: #9D9C9D;
+}
+
+@media (min-width: 990px) and (max-width: 1220px) {
+    .profilesetupform input, .profilesetupform textarea{
+        width: 320px
+    }
+    }
+
+    @media screen and (max-width: 989px) {
+        .profilesetupform input, .profilesetupform textarea{
+            width: 300px
+        }
+        }
+    
+
+@media screen and (max-width: 960px) {
+
+.setupfull{
+    flex-direction: column;
+}
+
+.setupfull input{
+    width: 100%;
+}
+.setup-textarea{
+    width: 500px;
+}
+
+.setupstate{
+    margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .setup-buttons{
+        flex-direction: column;
+    }
+
+    .setup-textarea{
+        width: 450px;
+    }
+    .profilesetupform textarea{
+        width: 100%;
+    }
+    }
+
+    @media screen and (max-width: 530px) {
+        .setup-textarea{
+            width: 350px;
+        }
+        }
+        @media screen and (max-width: 500px) {
+            .setup-textarea{
+                width: 240px;
+            }
+
+            }
+
+

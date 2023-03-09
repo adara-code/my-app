@@ -30,7 +30,7 @@ const ProfileNav = () => {
     <li className='profilenav_user_icons align-center'>
     <span><RiMessage2Fill/></span>
         <span><BsFillBellFill></BsFillBellFill></span>
-        <div><img src={User} alt="user" /></div>
+        <NavLink to='/dashboardhome'><div><img src={User} alt="user" /></div></NavLink>
     </li>
   </ul>
 

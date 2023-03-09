@@ -1,0 +1,84 @@
+.trans-circle{
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-light);
+    border: 1px solid #D5FADB;
+    color: var(--color-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.trans-line{
+    width: 200px;
+    height: 2px;
+    background: #D5FADB ;
+}
+
+.trans-active{
+    background-color: var(--color-green);
+    border: none;
+    color: white;
+}
+.trans-header{
+    width: 400px;
+}
+
+.transshow{
+    display: none;
+}
+@media screen and (max-width: 910px) {
+.trans-form {
+    flex-direction: column;
+}
+
+.transhidden{
+    display: none;
+}
+
+.transshow{
+    display: flex;
+}
+    }
+
+    @media screen and (max-width: 500px) {
+        .trans-line{
+            width: 100px;
+            height: 2px;
+
+        }
+            }
+
+@media screen and (max-width: 460px) {
+    .trans-header{
+        width: 300px;
+    }
+        }
+        @media screen and (max-width: 425px) {
+            .trans-line{
+                width: 50px;
+                height: 2px;
+    
+            }
+            .trans-header{
+                width: 260px;
+            }
+.trans-btn1{
+    width: 100px !important;
+    height: 40px !important;
+}
+
+.transtwoword{
+    font-size: 11px !important;
+    margin-top: 10px !important;
+}
+            .transpan{
+                font-size: 12px
+            }
+            .trans-h6{
+                font-size: 12px;
+    
+            }
+        
+                }
