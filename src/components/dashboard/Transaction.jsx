@@ -3,16 +3,19 @@ import DashboardNav from './DashboardNav'
 import "./dashboard.css"
 import { NavLink } from "react-router-dom";
 import {BiSearch} from 'react-icons/bi'
-import {BsQuestionLg} from 'react-icons/bs'
-import {BsFillBellFill} from 'react-icons/bs'
-import {HiLockClosed} from 'react-icons/hi'
+import Box1 from '../../assets/transactionbox1.svg'
+import Box2 from '../../assets/transactionbox2.svg'
 import {GoThreeBars} from 'react-icons/go'
-import {FaUserAlt} from 'react-icons/fa'
 import User from '../../assets/dashboarduser.png'
 import Icon from '../../assets/notification.png'
-import SetUpSecond from './SetUpSecond';
+import filter from '../../assets/filter.svg'
+import Table from './table/Table';
+import { Secondcolumn } from './table-data/Coulmns';
+import { SecondTableData } from './table-data/Data';
 
-const AccountSettings = () => {
+
+
+const Transaction = () => {
     const [Menu, showMenu] = useState({
         display: "none"
       })
@@ -32,13 +35,13 @@ const AccountSettings = () => {
            <section className="accountnav dashboard-home-first-section">
             <DashboardNav/>
            </section>
-           <section className="account-main" >
+           <section className="account-main customer-account-main" >
            <header className='dash-home-inner-header flex flexSpaceBtw' style={{width: '100%'}}>
                          <ul className='flex' style={{gap: '20px',padding: '0', width: '100%'}}>
-                                <h5 style={{marginTop: '10px'}}>ACCOUNT</h5>
+                                <h5 style={{marginTop: '10px'}}>Transactions</h5>
                                 <li className='navlinks align-center' style={{gap:'10px'}}>
                                     <form >
-                                    <input type="text" className='profile_searchbar account-search' style={{paddingLeft: '45px',border: 'none'}} placeholder='Search'/>
+                                    <input type="text" className='profile_searchbar account-search' style={{paddingLeft: '45px',border: 'none'}} placeholder='Search for a Transaction'/>
                                     <span className='dashboardnav-search accountnav-search' style={{fontSize: '18px', color: '#999090',    marginLeft:  "-380px"}}><BiSearch/></span>
                                     </form>
                             
@@ -71,20 +74,38 @@ const AccountSettings = () => {
                     <div className='dash-hidden-navvv' style={{...Menu}}>
                     <DashboardNav onclickclose={closeMenu}/>
                     </div>
-                    <section className='flex gap-20 account-side'>
-                        <section className='account-left flex flexColumn gap-20'>
-                        <p style={{margin: '0'}}> <span className='me-1'><FaUserAlt/></span>  Profile</p>
-                        <p style={{margin: '0'}}> <span className='me-1'><BsFillBellFill/></span> Notification</p>
-                        <p style={{margin: '0'}}> <span className='me-1'><HiLockClosed/></span> Password</p>
-                        <p style={{margin: '0'}}> <span className='me-1'><BsQuestionLg/></span> Help</p>
-                        </section>
-                        <section className="account-right">
-                            <SetUpSecond/>
-                        </section>
+                    <section className='mt-4 customer-main' style={{background: 'white', borderRadius: '8px'}}>
+                    <section className='flex gap-20 dashome-boxes cust-box'>
+                         <div><img src={Box1} alt="" /></div>
+                         <div><img src={Box2} alt="" /></div>
+                       </section>
+                       <section className="flex mt-5  flexSpacebtw table-nav" >
+                        <div className="flex flexCenter gap-20">
+                        <span  style={{fontWeight: '600', borderBottom: '4px solid var(--color-green)'}}>All</span>
+                         <span style={{fontWeight: '600'}}>Recent</span>
+                         <span style={{fontWeight: '600'}}>Pending</span>
+                         <span style={{fontWeight: '600'}}>Paid</span>
+                        </div>
+                         <div><input type="text" className='profile_searchbar table-search' style={{paddingLeft: '30px'}} placeholder='Search for reviews'/></div>
+                         <div className="flex flexCenter gap-20 table-filter" style={{    border:" 1px solid #3C3A3B", borderRadius: '8px', padding: '11.5px'}}>
+                             <img src={filter} alt="" style={{width: '15px', height: '15px'}}/>
+                             <span>Filter</span>
+                         </div>
+                       </section>
+                       <section className="cust-hidden mt-5 flex flexSpacebtw">
+                       <span  style={{fontWeight: '600', borderBottom: '4px solid var(--color-green)'}}>All</span>
+                       <div className="flex flexCenter gap-20 table-filter" style={{    border:" 1px solid #3C3A3B", borderRadius: '8px', padding: '11.5px'}}>
+                             <img src={filter} alt="" style={{width: '15px', height: '15px'}}/>
+                             <span>Filter</span>
+                         </div>
+                       </section>
+                    <section className='flex gap-20 customer-table mt-5'>
+                           <Table COLUMNS={Secondcolumn} DATA={SecondTableData} width='900px'/>
+                    </section>
                     </section>
            </section>
     </section>
   )
 }
 
-export default AccountSettings
+export default Transaction

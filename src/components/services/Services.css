@@ -83,3 +83,46 @@ padding: 20px;
             }
             
             }
+
+    /* *___________________________________setupprofile.css---------------------------------------* */
+
+    .profilesetupheader{
+        height: 320px;
+        background: linear-gradient(184.05deg, #118924 -11.59%,  #F2D741 123.79%);
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        padding: 40px;
+    }
+
+    .profilesetupcont{
+        margin: auto;
+        margin-top: -100px;
+        width: 70%;
+        border-radius: 30px;
+       background: white;
+        
+    }
+
+    @media screen and (max-width: 500px) {
+        .profilesetupcont{
+            width: 90%;
+        }
+        .profilesetup-p{
+            font-size: 30px !important;
+        }
+        }
+        @media screen and (max-width: 400px) {
+            .profilesetupcont{
+                width: 100%;
+            }
+   
+
+            .profilesetupheader{
+                font-size: 16px;
+                padding: 30px;
+                text-align: center;
+            }
+            .profilesetup-p{
+                font-size: 27px !important;
+            }
+            }
