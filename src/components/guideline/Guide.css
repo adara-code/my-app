@@ -1,0 +1,68 @@
+.guide-container{
+    background: var(--color-light);
+    padding-top: 58px;
+    padding-bottom: 58px;
+}
+
+.guide-innerwrapper{
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.guide-steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.guide-steps-circle{
+height: 114px;
+width: 114px;
+border-radius: 50%;
+border: 4px solid #118924;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 600;
+font-size: 32px;
+color: #118924;
+}
+
+.guide-steps h4{
+    font-size: 28px;
+}
+
+.guide-steps p{
+    text-align: center;
+    color: #323031;
+    width: 300px;
+}
+
+@media (min-width: 1020px){
+    .guide-innerwrapper{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+        }
+
+@media screen and (max-width: 1150px) {
+    .guide-steps-circle{
+        height: 90px;
+        width: 90px;
+        font-size: 24px;
+        }
+        .guide-steps h4{
+            font-size: 20px;
+        }
+        .guide-steps p{
+  
+            width: 250px;
+        }
+    }

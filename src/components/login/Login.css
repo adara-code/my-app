@@ -1,0 +1,132 @@
+.login-wrapper{
+    padding: 70px;
+    background-color: var(--color-light);
+    background-image: url("../../assets/loginbackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login_form__container {
+    background-color: white;
+    width: 40.625rem;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 3px#c4c4c4;
+}
+
+.form-input input{
+    height: 60px;
+    border: 1px solid #14AE5C;
+    border-radius: 0px;
+}
+.login_signup_form {
+    padding: 5rem;
+}
+
+.gap-20{
+    gap: 20px
+}
+
+.log {
+    color: var(--color-greentext);
+    text-decoration: none;
+}
+.login_sign-up {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--color-green);
+    color: white;
+    font-weight: 600;
+}
+
+.login_sign-up:hover {
+    border: 1px solid var(--color-green);
+    background-color: transparent;
+    color: black;
+transition: var(--transition);
+}
+
+.login_password{
+position: relative;
+top: -43px;
+left: 455px;
+cursor: default;
+}
+
+.forgot {
+width: 100%;
+justify-content: end;
+color: var(--color-green)
+}
+
+.form-socials img{
+cursor: default;
+}
+
+@media screen and (max-width: 780px) {
+
+    .login_form__container {
+        box-shadow: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .login_signup_form {
+        padding: 2rem;
+    }
+
+    .login_password{
+        left: 395px;
+        }
+    
+        }
+
+    .signup-options{
+        width: 100%;
+        height: 70px;
+        border:  1px solid var(--color-green);
+        border-radius: 4px;
+        background: var(--color-light);
+        font-weight: 500;
+    }
+
+    .special-sign-up{
+        width: 100%;
+        padding: 8px 32px;
+        border-radius: 8px;
+        background: transparent;
+        border: 1px solid #5d5b5c;
+        font-size: 16px;
+        font-weight: 600;
+    } 
+
+  
+ @media screen and (max-width: 625px) {
+    .login_password{
+        left: 365px;
+        }
+            }
+ @media screen and (max-width: 625px) {
+     .login_password{
+         left: 345px;
+         }
+             }
+@media screen and (max-width: 600px) {
+    .login-wrapper{
+        padding: 10px;}
+    .login_form__container {
+          
+        width: 20rem;
+    }
+
+    .login_password{
+       display: none;
+        }
+
+        .special-sign-up{
+            font-size: 16px;
+
+        } 
+   } 
+   

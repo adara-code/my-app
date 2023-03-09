@@ -1,0 +1,122 @@
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.show_menu, .logo2{
+    display: none;
+}
+
+.show_menu{
+        opacity: 0;
+        height: 0;
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    padding: 25px 0px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav a{
+    font-weight: 600;
+}
+
+
+.navlinks, .login{
+    gap: 40px;
+}
+
+.navlinks a, .login a{
+    color: black;
+}
+
+.navlinks a:hover, .login a:hover, a.active{
+    color: var(--color-greentext);
+}
+
+.login a+a{
+    color: white;
+}
+
+.SignUp{
+ padding: 12px 32px;
+ background: var(--color-green);
+ border-radius: 8px;
+
+}
+
+@media screen and (max-width: 1000px) {
+.logo, .logo2{
+    width:  100px;
+}
+
+.navlinks, .login{
+    gap: 20px;
+}
+
+.SignUp{
+    padding: 10px 28px;
+   
+   }
+}
+
+@media screen and (max-width: 780px) {
+    .navlinks, .logo{
+ display: none;
+    }
+
+    .logo2{
+        display: block;
+    }
+    .nav{
+
+        transition: all 400ms ease;
+    }
+
+    .show_menu{
+        height: 100%;
+        opacity: 1;
+        background: var(--color-light);
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 4;
+        width: 300px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        padding: 30px;
+        gap: 30px;
+    }
+    .show_menu a{
+        display: flex;
+        color: black;
+
+    }
+
+    .navicon{
+        font-size: 20px;
+        margin-right: 30px;
+        color: black;
+
+    }
+
+    .login{
+        font-size: 14px;
+    }
+    .SignUp{
+        padding: 4px 12px;
+        border-radius: 6px;
+       }
+
+    }

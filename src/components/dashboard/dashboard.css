@@ -1,0 +1,169 @@
+.dashboard-nav{
+    background: white;
+    box-shadow: 1px 1px 1px #abafaf;
+    position: sticky;
+    top:0 ;
+    height: 100vh;
+    overflow-y: scroll;
+    z-index: 3;
+}
+
+.dashnavcancel{
+    display: none;
+}
+
+.dash-hidden-navvv{
+opacity: 0;
+height: 0;
+}
+
+.dashboard-home-second-section{
+    box-shadow: 1px 1px 1px #abafaf;
+}
+
+.dash-home-inner{
+    padding: 40px 24px
+}
+
+.dashboard-home-third-section{
+    background: white;
+    position: sticky;
+    top:0 ;
+    height: 100vh;
+    overflow-y: scroll;
+    z-index: 3;
+}
+.dashboard-nav-inner{
+    padding: 50px;
+    gap: 20px
+}
+
+.dashboard-nav-item {
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dashboard-nav-item:hover, .dashboardactive {
+    background: linear-gradient(213.53deg, #F2D741 6.44%, #118924 98.29%);
+    color: white;
+}
+
+.gap-20{
+    gap: 20px;
+}
+
+.dashboard-home-second-section{
+    background-color: var( --color-light);
+    flex-basis: 50%;
+    /* width: 100%; */
+}
+
+.dash-secret-header{
+display: none;
+}
+
+.dashboardnav-search{
+    margin-left:  -380px;
+    cursor: pointer;
+    }
+.dashboard-reviews{
+    flex-wrap: wrap;
+}
+.dash-reviews{
+    border-radius: 8px;
+    background-color: var(--color-light);
+}
+
+.dashboard-home-third-section{
+    padding: 32px
+}
+
+
+@media (min-width: 1020px) and (max-width: 1300px) {
+    .dashboard-nav-inner{
+        padding: 30px;
+    }
+    .dash-home-user-img{
+        width: 37px;
+        height: 37px
+    }
+
+    .dash-11 h5{
+        font-size: 16px;
+    }
+
+    .dash-11 input{
+        width: 220px;
+    }
+    .dashboardnav-search{
+        margin-left:  -200px;
+    }
+
+    .dashboard-home-third-section{
+        padding: 20px
+    }
+    .dashboard-reviews{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width: 1019px) {
+
+
+    .dashboard-home-first-section,.dash-home-inner-header,.dashboard-home-third-section{
+display: none;
+    }
+
+    .dashnavcancel{
+        display: flex;
+    }
+
+    .dash-hidden-navvv{
+        opacity: 1;
+        height: 100%;
+        background: white;
+        box-shadow: 1px 1px 1px #abafaf;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+    .dashboard-nav{
+        height: 100%;
+    }
+
+    .dashboard-home-second-section{
+        flex-basis: 100%;
+    }
+    
+    
+
+    .dash-secret-header{
+        width: 100%;
+        display: flex;
+    }
+
+    .dash_searchbar{
+        width: 300px;
+        margin: auto;
+    }
+
+    .dashboard-reviews{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+}

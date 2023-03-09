@@ -1,0 +1,232 @@
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.show_menu, .logo2{
+    display: none;
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    padding: 25px 0px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+
+.profile_searchbar{
+    padding: 0.8rem;
+    width: 400px;
+    border: 1px solid #3C3A3B;
+    border-radius: 8px;
+
+}
+
+.profilenav_cancel{
+margin-left:  -40px;
+cursor: pointer;
+}
+
+.profilenav_user_icons{
+    gap:25px;
+}
+
+.navlinks{
+    gap: 40px;
+}
+
+.navlinks a{
+    color: black;
+}
+
+.navlinks a:hover, a.active{
+    color: var(--color-greentext);
+}
+
+
+
+.SignUp{
+ padding: 12px 32px;
+ background: var(--color-green);
+ border-radius: 8px;
+
+}
+
+@media screen and (max-width: 1000px) {
+.logo, .logo2{
+    width:  100px;
+}
+
+.navlinks, .login{
+    gap: 20px;
+}
+
+.SignUp{
+    padding: 10px 28px;
+   
+   }
+}
+
+@media screen and (max-width: 780px) {
+    .navlinks, .login, .logo{
+ display: none;
+    }
+
+    .profileform{
+        display: block;
+    }
+
+    .logo2{
+        display: block;
+    }
+    .nav{
+
+        transition: all 400ms ease;
+    }
+
+    .show_menu{
+        background: var(--color-light);
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 4;
+        width: 300px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .show_menu a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navicon{
+        font-size: 20px;
+        margin-right: 10px;
+
+    }
+    a.active, a{
+        color: var(--color-greentext);
+    }
+
+    }
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.show_menu, .logo2{
+    display: none;
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    padding: 25px 0px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav a{
+    font-weight: 600;
+}
+
+
+.navlinks, .login{
+    gap: 40px;
+}
+
+.navlinks a, .login a{
+    color: black;
+}
+
+.navlinks a:hover, .login a:hover, a.active{
+    color: var(--color-greentext);
+}
+
+.login a+a{
+    color: white;
+}
+
+.SignUp{
+ padding: 12px 32px;
+ background: var(--color-green);
+ border-radius: 8px;
+
+}
+
+@media screen and (max-width: 1000px) {
+.logo, .logo2{
+    width:  100px;
+}
+
+.navlinks, .login{
+    gap: 20px;
+}
+
+.SignUp{
+    padding: 10px 28px;
+   
+   }
+}
+
+@media screen and (max-width: 780px) {
+    .navlinks, .login, .logo{
+ display: none;
+    }
+
+    .logo2{
+        display: block;
+    }
+    .nav{
+
+        transition: all 400ms ease;
+    }
+
+    .show_menu{
+        background: var(--color-light);
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 4;
+        width: 300px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .show_menu a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navicon{
+        font-size: 20px;
+        margin-right: 10px;
+
+    }
+    a.active, a{
+        color: var(--color-greentext);
+    }
+
+    }

@@ -1,0 +1,48 @@
+.thirdcat-cont{
+  gap: 30px;
+}
+.thirdcat-cont>div{
+    width: 600px;
+    height: 350px;
+    color: white;
+    font-family: var(--poppins);
+}
+
+.thirdcat-card1{
+    background: url('../../assets/pbackgroud1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0px 0 30px;
+}
+
+.thirdcat-card2{
+    background: url('../../assets/pbackgroud2.png');
+    background-position: center;
+    padding: 100px 0px 0 30px;
+    background-repeat: no-repeat;
+}
+
+.register{
+    color: var(--color-green);
+    font-weight: 500;
+}
+
+.register:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 768px) {
+    .thirdcat-cont{
+       flex-direction: column;
+       align-items: center;
+      }
+
+      .thirdcat-cont>div{
+        width: 100%;
+
+    }
+    
+
+        }
